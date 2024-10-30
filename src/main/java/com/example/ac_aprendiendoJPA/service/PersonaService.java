@@ -46,4 +46,9 @@ public class PersonaService implements IPersonaService {
 
         this.guardarPersona(personEdit);
     }
+
+    @Override
+    public void editPersona(PersonaJpa e) {
+        this.guardarPersona(e);
+    }
 }

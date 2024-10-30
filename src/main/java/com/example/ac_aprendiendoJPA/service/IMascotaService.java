@@ -15,9 +15,6 @@ public interface IMascotaService {
 
     public Mascota encontrarMascota(Long id);
 
-    public  void editMascota(Long idOriginal,
-                             Long idNew,
-                             String nombreNuevo,
-                             String razaNueva, int edad);
+    public  void editMascota(Long idOriginal, Long idNew,String nombreNuevo, String razaNueva, int edad);
 
 }

@@ -14,7 +14,7 @@ public interface IPersonaService {
 
     public PersonaJpa encontrarPersona(Long id);
 
-    public void editarPersona(Long idOriginal, Long idNew,
-                              String nuevoNombre, String nuevoApellido,
-                              int newEdad);
+    public void editarPersona(Long idOriginal, Long idNew, String nuevoNombre, String nuevoApellido, int newEdad);
+
+    void editPersona(PersonaJpa e);
 }

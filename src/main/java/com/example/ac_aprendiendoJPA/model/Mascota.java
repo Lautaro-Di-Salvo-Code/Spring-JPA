@@ -1,9 +1,6 @@
 package com.example.ac_aprendiendoJPA.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -17,6 +14,11 @@ public class Mascota {
     private String nombre;
     private String raza;
     private int edad;
+//    anotation para hacer relacion de muchos a uno
+//    en este caso muchos perros pueden ser mascota de una sola persona
+    @ManyToOne
+    private PersonaJpa person;
+
     public Mascota() {
     }
 

@@ -40,4 +40,13 @@ public class PErsonaController {
         PersonaJpa personEdit = servicePerson.encontrarPersona(nuevoId);
         return personEdit;
     }
+//    OTra nmanera mas simple de hacer el metodo put
+    @PutMapping("apipersona/edit")
+    public PersonaJpa editPerson2(@RequestBody PersonaJpa e){
+//        editPersona el nuevo metodo
+        servicePerson.editPersona(e);
+        return  servicePerson.encontrarPersona(e.getId());
+    }
+
+
 }
